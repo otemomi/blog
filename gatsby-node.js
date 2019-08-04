@@ -130,11 +130,11 @@ exports.sourceNodes = ({ actions }) => {
     type Frontmatter {
       title: String!
       author: String
-      date: Date! @dateformat
+      date: Date!
       path: String!
       tags: [String!]
       excerpt: String
-      coverImage: File @fileByRelativePath
+      coverImage: File
     }
   `
   createTypes(typeDefs)
