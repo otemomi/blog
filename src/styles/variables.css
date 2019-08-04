@@ -1,0 +1,24 @@
+:root {
+  /* light theme color */
+  --light-background: #fdfaf9;
+  --light-background-secondary: #ddd;
+  --light-color: #3c3c3c;
+  --light-color-secondary: #999;
+  --light-border-color: #dcdcdc;
+  --light-link: #00896c;
+
+  /* dark theme colors */
+  --dark-background: #292a2d;
+  --dark-background-secondary: #3b3d42;
+  --dark-color: #f4f4f4;
+  --dark-color-secondary: #73747b;
+  --dark-border-color: #4a4b50;
+  --dark-link: #f7d94c;
+
+  /* variables for js, must be the same as these in @custom-media queries */
+  --phoneWidth: (max-width: 684px);
+  --tabletWidth: (max-width: 900px);
+}
+
+@custom-media --phone (width < 684px);
+@custom-media --tablet (width < 900px);
