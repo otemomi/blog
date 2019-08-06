@@ -12,7 +12,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--light-background-secondary);
+  background: #f4f4f4;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 8px;
@@ -22,7 +22,7 @@
   color: #00896c;
 
   :global .dark-theme :local & {
-    background: var(--dark-background-secondary);
+    background: #333;
     color: #f7d94c;
   }
 

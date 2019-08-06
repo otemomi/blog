@@ -241,13 +241,14 @@ button, input, textarea {
 
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   flex: 1 0 auto;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
   margin: 30px auto 20px;
   width: 100%;
-  max-width: 800px;;
+  max-width: 1200px;
 
   @media (--phone) {
     margin-top: 0;

@@ -1,9 +1,7 @@
 .post {
-  width: 100%;
-  max-width: 800px;
+  width: calc((100%-90px)/3);
   text-align: left;
-  margin: 0 auto 10px;
-  padding: 30px;
+  margin: 0 15px 30px;
   background: #fff;
   box-shadow: 0 10px 24px -10px rgba(0,0,0,.12);
   :global .dark-theme :local & {
@@ -12,7 +10,11 @@
   }
 
   @media (--tablet) {
-    max-width: 660px;
+    width: calc((100%-60px)/2);
+  }
+
+  @media (--phone) {
+    width: calc((100%-30px));
   }
 
   h1 {
@@ -47,13 +49,13 @@
 }
 
 .coverImage {
-  border-radius: 6px;
-  margin-bottom: 30px;
+  border-radius: 0;
+  margin-bottom: 15px;
 }
 
 .meta {
-  margin-bottom: 15px;
-  font-size: 1rem;
+  font-size: .9rem;
+  padding: 0 15px;
 }
 
 .tags {
@@ -65,12 +67,15 @@
   margin-right: 10px;
 }
 
+.article {
+  padding: 0 15px;
+}
 .readMore {
   display: block;
   text-decoration: none;
   font-weight: bold;
   margin: 20px 0;
-  font-size: 1rem;
+  font-size: .9rem;
   padding: 5px 10px;
   background: #f4f4f4;
   border-radius: 50px;

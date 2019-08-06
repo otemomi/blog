@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import Navigation from './navigation'
 import { toKebabCase } from '../helpers'
 
-import style from '../styles/post.module.css'
+import style from '../styles/index.module.css'
 
 const Post = ({
   title,
@@ -27,6 +27,12 @@ const Post = ({
   return (
     <div className={style.post}>
       <div className={style.postContent}>
+        {coverImage && (
+          <Img
+            fluid={coverImage.childImageSharp.fluid}
+            className={style.coverImage}
+          />
+        )}
        <h1 className={style.title}>
           {excerpt ? <Link to={path}>{title}</Link> : title}
         </h1>
@@ -42,14 +48,7 @@ const Post = ({
             </div>
           ) : null}
         </div>
-
-        {coverImage && (
-          <Img
-            fluid={coverImage.childImageSharp.fluid}
-            className={style.coverImage}
-          />
-        )}
-
+        <div className={style.article}>
         {excerpt ? (
           <>
             <p>{excerpt}</p>
@@ -68,6 +67,7 @@ const Post = ({
             />
           </>
         )}
+        </div>
       </div>
     </div>
   )
