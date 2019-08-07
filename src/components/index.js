@@ -28,10 +28,12 @@ const Post = ({
     <div className={style.post}>
       <div className={style.postContent}>
         {coverImage && (
-          <Img
-            fluid={coverImage.childImageSharp.fluid}
-            className={style.coverImage}
-          />
+          <Link to={path}>
+            <Img
+              fluid={coverImage.childImageSharp.fluid}
+              className={style.coverImage}
+            />
+          </Link>
         )}
        <h1 className={style.title}>
           {excerpt ? <Link to={path}>{title}</Link> : title}

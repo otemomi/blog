@@ -48,6 +48,19 @@ h1 {
 
 h2 {
   font-size: 1.625rem;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+
+  &::before {
+    content: '#';
+    margin-right: 5px;
+    color: #ddd;
+
+
+    :global .dark-theme :local & {
+      color: #333;
+    }
+  }
 }
 
 h3 {
@@ -272,11 +285,11 @@ hr {
 
 .infoBanner {
   text-align: left;
-  margin: 20px 0 40px;
+  margin: 10px auto 30px;
   padding: 10px 20px;
-  border-radius: 10px;
-  width: calc(100% - 40px);
-  background: var(--light-background-secondary);
+  border-radius: 4px;
+  width: calc(100% - 30px);
+  background: #fff;
 
   .dark-theme & {
     background: var(--dark-background-secondary);

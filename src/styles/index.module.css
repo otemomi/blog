@@ -9,6 +9,10 @@
     box-shadow: none;
   }
 
+  :hover img {
+    transform: scale(1.2);
+  }
+
   @media (--tablet) {
     width: calc((100%-60px)/2);
   }
@@ -22,7 +26,11 @@
   }
 
   img {
-    border-radius: 0;
+    transition: all .2s ease-in-out !important;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   a:hover {
@@ -70,6 +78,7 @@
 .article {
   padding: 0 15px;
 }
+
 .readMore {
   display: block;
   text-decoration: none;
