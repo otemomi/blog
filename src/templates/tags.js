@@ -55,9 +55,9 @@ const Tags = ({
 
         <Navigation
           previousPath={previousPagePath}
-          previousLabel="Newer posts"
+          previousLabel="新しい記事"
           nextPath={nextPagePath}
-          nextLabel="Older posts"
+          nextLabel="古い記事"
         />
       </Layout>
     </>

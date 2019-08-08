@@ -17,7 +17,7 @@ module.exports = {
     },
     logoText: 'Codet28',
     defaultTheme: 'light',
-    postsPerPage: 5,
+    postsPerPage: 9,
     showMenuItems: 2,
     menuMoreText: 'もっと読む',
     mainMenu: [
