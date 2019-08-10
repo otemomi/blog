@@ -3,7 +3,6 @@ title: なぜサイトを始めるのかとか
 date: "2019-07-20"
 path: "/first-post"
 author: "otemomi"
-excerpt: '何年かぶりにブログというかWeb上になんらしか記録の残していきたいという思いも生まれてきたので作ってみました。'
 tags: ["diary", "memo"]
 coverImage: "../images/react.png"
 ---

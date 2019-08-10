@@ -110,11 +110,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-hello-friend`,
-        short_name: `hello-friend`,
+        name: `Codet28`,
+        short_name: `Codet28`,
         start_url: `/`,
-        background_color: `#292a2d`,
-        theme_color: `#292a2d`,
+        background_color: `#f7f7f2`,
+        theme_color: `#f7f7f2`,
         display: `minimal-ui`,
         icon: `src/images/hello-icon.png`,
       },
