@@ -104,19 +104,14 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
+          {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+              trackingId: "UA-145406376-1",
+            },
+          },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Codet28`,
-        short_name: `Codet28`,
-        start_url: `/`,
-        background_color: `#f7f7f2`,
-        theme_color: `#f7f7f2`,
-        display: `minimal-ui`,
-        icon: `src/images/hello-icon.png`,
       },
     },
   ],
