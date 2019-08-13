@@ -1,13 +1,14 @@
 .header {
-  background: #fff;
+  background: #FFBC42;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   padding: 20px;
+  color: #fff;
 
   :global .dark-theme :local & {
-    background: #252627;
+    background: #222;
   }
 
   a {
@@ -31,7 +32,7 @@
   font-weight: bold;
 
   & img {
-    height: 44px;
+    height: 20px;
   }
 }
 

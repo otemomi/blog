@@ -58,12 +58,7 @@ h2 {
   &::before {
     content: '#';
     margin-right: 5px;
-    color: #ddd;
-
-
-    :global .dark-theme :local & {
-      color: #333;
-    }
+    color: #FFBC42;
   }
 }
 

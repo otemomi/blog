@@ -12,8 +12,8 @@ module.exports = {
     copyrights: '',
     author: `@otemomi`,
     logo: {
-      src: '',
-      alt: '',
+      src: 'img/logo.svg',
+      alt: 'Codet28',
     },
     logoText: 'Codet28',
     defaultTheme: 'light',

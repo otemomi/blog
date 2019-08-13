@@ -57,12 +57,21 @@
 }
 
 .tags {
-  opacity: .5;
+  opacity: .7;
+  margin: 5px 0 20px;
 }
 
 .tag {
+  font-size: .8rem;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
+  padding: 2px 10px;
+  border-radius: 4px;
+  background: #00896c;
+  color: #fff;
+  :global .dark-theme :local & {
+    background: #333;
+  }
 }
 
 .readMore {
@@ -84,4 +93,18 @@
 
 .postContent {
   position: relative;
+}
+
+.sidebar {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  margin: 0 auto 10px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 10px 24px -10px rgba(0,0,0,.12);
+  :global .dark-theme :local & {
+    background: var(--dark-background-secondary);
+    box-shadow: none;
+  }
 }
