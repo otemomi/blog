@@ -1,33 +1,33 @@
-const postCssPresetEnv = require(`postcss-preset-env`)
-const postCSSNested = require('postcss-nested')
-const postCSSUrl = require('postcss-url')
-const postCSSImports = require('postcss-import')
-const cssnano = require('cssnano')
-const postCSSMixins = require('postcss-mixins')
+const postCssPresetEnv = require(`postcss-preset-env`);
+const postCSSNested = require("postcss-nested");
+const postCSSUrl = require("postcss-url");
+const postCSSImports = require("postcss-import");
+const cssnano = require("cssnano");
+const postCSSMixins = require("postcss-mixins");
 
 module.exports = {
   siteMetadata: {
     title: `Codet28`,
     description: `コードの海に溺れたい`,
-    copyrights: '',
+    copyrights: "",
     author: `@otemomi`,
     logo: {
-      src: 'img/logo.svg',
-      alt: 'Codet28',
+      src: "/img/logo.svg",
+      alt: "Codet28",
     },
-    logoText: 'Codet28',
-    defaultTheme: 'light',
+    logoText: "Codet28",
+    defaultTheme: "light",
     postsPerPage: 9,
     showMenuItems: 2,
-    menuMoreText: 'もっと読む',
+    menuMoreText: "もっと読む",
     mainMenu: [
       {
-        title: 'About',
-        path: '/about',
+        title: "About",
+        path: "/about",
       },
       {
-        title: 'まとめ',
-        path: '/matome',
+        title: "まとめ",
+        path: "/matome",
       },
     ],
   },
@@ -64,12 +64,12 @@ module.exports = {
           postCSSMixins(),
           postCSSNested(),
           postCssPresetEnv({
-            importFrom: 'src/styles/variables.css',
+            importFrom: "src/styles/variables.css",
             stage: 1,
             preserve: false,
           }),
           cssnano({
-            preset: 'default',
+            preset: "default",
           }),
         ],
       },
@@ -81,7 +81,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-embed-video',
+            resolve: "gatsby-remark-embed-video",
             options: {
               related: false,
               noIframeBorder: true,
@@ -97,7 +97,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
+              classPrefix: "language-",
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
@@ -115,4 +115,4 @@ module.exports = {
       },
     },
   ],
-}
+};
