@@ -4,7 +4,7 @@
   margin: 0 15px 30px;
   background: #fff;
   box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.12);
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
   :global .dark-theme :local & {
     background: var(--dark-background-secondary);
     box-shadow: none;
@@ -61,7 +61,7 @@
 }
 
 .coverImage {
-  border-radius: 0;
+  border-radius: 10px 10px 0 0;
   margin-bottom: 20px;
 }
 
@@ -72,13 +72,12 @@
 }
 
 .tags {
-  opacity: 0.7;
-  padding: 5px 20px 8px;
-  background: #00896c;
+  padding: 10px 20px 15px;
   color: #fff;
+  border-top: 1px solid #bbb;
   border-radius: 0 0 10px 10px;
   :global .dark-theme :local & {
-    background: #333;
+    border-color: #666;
   }
 }
 
@@ -86,16 +85,20 @@
   font-size: 0.8rem;
   display: inline-block;
   margin-right: 5px;
-  padding: 0 6px;
-  border: 1px solid #fff;
+  padding: 2px 7px;
+  color: #00896c;
+  border: 1px solid #00896c;
   border-radius: 4px;
   :global .dark-theme :local & {
-    border-color: #ccc;
+    border-color: #f7d94c;
+    color: #f7d94c;
   }
 
   &:hover {
-    background: #fff;
+    background: #00896c;
+    color: #fff;
     :global .dark-theme :local & {
+      background: #f7d94c;
       color: #333;
     }
   }
