@@ -1,5 +1,5 @@
 .header {
-  background: #FFBC42;
+  background: #ffbc42;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +47,13 @@
 }
 
 @keyframes cursor {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

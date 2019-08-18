@@ -35,6 +35,18 @@ module.exports = {
     `babel-preset-gatsby`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Codet28",
+        short_name: "C28",
+        start_url: "/",
+        background_color: "#FFBC42",
+        theme_color: "#FFBC42",
+        display: "minimal-ui",
+        icon: "src/images/hello-icon.png", // This path is relative to the root of the site.
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
