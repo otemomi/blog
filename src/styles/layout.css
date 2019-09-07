@@ -14,7 +14,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "游ゴシック体", YuGothic, 'Yu Gothic Medium', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "游ゴシック体",
+    YuGothic, "Yu Gothic Medium", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.54;
@@ -36,12 +37,18 @@ body {
   }
 }
 
-p, ul {
+p,
+ul {
   margin-top: 0;
   text-align: justify;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   display: flex;
   align-items: center;
   line-height: 1.3;
@@ -56,9 +63,9 @@ h2 {
   font-size: 1.625rem;
 
   &::before {
-    content: '#';
+    content: "#";
     margin-right: 5px;
-    color: #FFBC42;
+    color: #ffbc42;
   }
 }
 
@@ -131,7 +138,7 @@ figure {
   figcaption {
     font-size: 14px;
     margin-top: 5px;
-    opacity: .8;
+    opacity: 0.8;
 
     &.left {
       text-align: left;
@@ -155,7 +162,7 @@ code {
   padding: 1px 6px;
   margin: 0 2px;
   border-radius: 5px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 
   .dark-theme & {
     background: var(--dark-background-secondary);
@@ -166,7 +173,7 @@ pre {
   background: #1a1a1d;
   padding: 20px;
   border-radius: 8px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   overflow: auto;
 
   @media (--phone) {
@@ -179,7 +186,7 @@ pre {
     color: #ccc;
     margin: 0;
     padding: 0;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -210,7 +217,9 @@ table {
   border-radius: 5px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid var(--light-color);
   padding: 10px;
 
@@ -227,7 +236,8 @@ th {
   }
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: 40px;
   padding: 0;
 
@@ -240,8 +250,11 @@ ol ol {
   list-style-type: lower-alpha;
 }
 
-button, input, textarea {
-  font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
+button,
+input,
+textarea {
+  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Roboto",
+    "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -263,7 +276,7 @@ button, input, textarea {
   max-width: 1200px;
 
   @media (--phone) {
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   @media (--tablet) {
