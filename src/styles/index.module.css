@@ -11,7 +11,8 @@
   }
 
   :hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    filter: opacity(70%);
   }
 
   @media (--tablet) {
