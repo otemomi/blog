@@ -25,10 +25,6 @@ module.exports = {
         title: "About",
         path: "/about",
       },
-      {
-        title: "まとめ",
-        path: "/matome",
-      },
     ],
   },
   plugins: [
